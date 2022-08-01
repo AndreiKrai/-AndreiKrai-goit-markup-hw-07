@@ -1,0 +1,106 @@
+/*----------Header-----------*/
+
+/*----------Hero-----------*/
+/*----------Feauters-----------*/
+
+/*----------Team-----------*/
+
+/*----------Clients----------*/
+
+/*----------Footer-----------*/
+/*
+.team-social {
+  display: flex;
+}
+.icon-socials {
+  height: 20px;
+  width: 20px;
+}*/
+
+/*----------Portfolio-----------*/
+/*--------------------Practice----------------*/
+.practice-section {
+  padding: 50px 50px;
+}
+/* такий код на 29:12 в 5 модулі. Питання №1
+.practice-btn::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  margin-right: 10px;
+}*/
+.practice-btn {
+  position: relative;
+  overflow: hidden;
+}
+.practice-btn::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  margin-right: 10px;
+  transition: transform 250ms linear;
+}
+
+.practice-btn:hover::before {
+  transform: translateY(-25px);
+}
+
+.practice-btn::after {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+
+  transform: translateY(calc(-50% + 25px));
+  transition: transform 250ms linear;
+
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 13, 255);
+  background-image: url(../img/1.jpg);
+  background-size: contain;
+}
+.practice-btn:hover::after {
+  transform: translateY(calc(-50%));
+}
+/*--------------------Practice Menu----------------*/
+
+.practice-list {
+  position: relative;
+
+  display: flex;
+  gap: 30px;
+  width: 300px;
+  list-style-type: none;
+}
+.practice-link {
+  position: relative;
+
+  outline: 1px solid #000000;
+  display: block;
+  padding: 10px 20px;
+  color: currentColor;
+  text-decoration: none;
+  background-color: rgb(223, 190, 190);
+}
+.practice-link:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  content: '';
+  display: block; /*навіщо? бо без блоку взагалі не видно підчеркування  https://prnt.sc/gJ-1icLWnNYf https://prnt.sc/pi1t-DVt1pFm*/
+  width: 100%;
+  height: 5px;
+  background-color: red;
+  transform: scaleX(0);
+  transition: transform var(--transition-change);
+}
+.practice-link:hover.practice-link:after {
+  transform: scaleX(1);
+}

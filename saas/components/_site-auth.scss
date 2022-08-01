@@ -1,0 +1,35 @@
+.auth {
+    margin-left: auto;
+    display: flex;
+}
+
+.auth__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.auth__link:hover,
+.auth__link:focus {
+    color: var(--accent-color);
+}
+
+.auth__icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    transition: fill var(--transition-change);
+}
+
+.auth__link:hover .auth__icon-envelope,
+.auth__link:focus .auth__icon-envelope,
+.auth__link:hover .auth__icon-smartphone,
+.auth__link:focus .auth__icon-smartphone {
+    fill: var(--accent-color);
+}
+
+.auth__icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+
+    transition: fill var(--transition-change);
+}

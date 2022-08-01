@@ -1,0 +1,34 @@
+.smal-pic__list {
+  display: flex;
+  gap: 30px;
+}
+
+.smal-pic__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smal-pic__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.smal-pic__icon {
+  fill: rgba(175, 177, 184, 1);
+
+  transition: fill var(--transition-change);
+  .smal-pic__link:hover &,
+  .smal-pic__link:focus & {
+    fill: var(--accent-color);
+  }
+}
