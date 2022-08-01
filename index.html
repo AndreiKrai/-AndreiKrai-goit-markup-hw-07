@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="vewport" content="width=device-width,initial scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Header-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__container container">
         <a class="logo logo--header" href="./index.html"
           >Web<span class="logo--dark">Studio</span></a
@@ -58,10 +58,15 @@
             >
           </li>
         </ul>
+        <button class="menu-btn" type="button">
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header>
+    </header> -->
     <main>
-      <!--Hero-->
+      <!-- Hero -->
       <section class="hero-section">
         <div class="container">
           <h1 class="hero__title title">Эффективные решения<br />для вашего бизнеса</h1>
@@ -123,9 +128,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>     
+      <!--Servises-->
       <section class="servises">
-        <!--Servises-->
         <div class="container">
           <h2 class="section-title title">Чем мы занимаемся</h2>
           <ul class="colored-card-list">
@@ -150,18 +155,37 @@
           </ul>
         </div>
       </section>
+      <!--Team-->
       <section class="section-gray-color">
-        <!--Team-->
         <div class="container">
           <h2 class="section-title title">Наша команда</h2>
           <ul class="person-list">
             <li class="person-card">
-              <img
+              <picture>
+                <source
+                srcset="
+                ./img/team-one-270.jpg 1x, 
+                ./img/team-one-270@2x.jpg 2x"
+                media="(min-width:1200px)"/>
+                <source
+                srcset="
+                ./img/team-one-354.jpg 1x, 
+                ./img/team-one-354@2x.jpg 2x"
+                media="(min-width:768px)"/>
+                <source
+                srcset="
+                ./img/team-one-450.jpg 1x, 
+                ./img/team-one-450@2x.jpg 2x"
+                media="(min-width:320px)"/>
+
+                <img
                 class="person-card__img"
-                src="./img/11.jpg"
+                src=""
                 alt="фото Игорь Демьяненко"
-                width="270"
+                width="450"
               />
+              </picture>
+              
               <div class="person-card__desc">
                 <h3 class="person-card__name title">Игорь Демьяненко</h3>
                 <p class="person-card__text" lang="en">Product Designer</p>
@@ -312,7 +336,7 @@
         </div>
       </section>
       <!--Clients-->
-      <section>
+      <!-- <section>
         <div class="container">
           <h2 class="section-title title">Постоянные клиенты</h2>
           <ul class="smal-pic__list">
@@ -362,9 +386,9 @@
         </div>
       </section>
     </main>
-    <footer class="section-footer">
+    <footer class="section-footer"> -->
       <!--Footer-->
-      <div class="container footer-container">
+      <!-- <div class="container footer-container">
         <div class="footer-navi">
           <a class="logo" href="./index.html">Web<span class="logo-white">Studio</span></a>
           <address class="address">
@@ -433,7 +457,7 @@
         </div>
       </div>
     </footer>
-
+ -->
     <!--Modal-->
     <div data-modal class="modal-thmb is-hidden">
       <form class="form">

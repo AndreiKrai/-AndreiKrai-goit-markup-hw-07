@@ -1,12 +1,18 @@
 .colored-card-list {
-  display: flex;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .colored-card__item {
   position: relative;
-  &:nth-child(-n + 2) {
-    margin-right: 30px;
-  }
 }
 
 .colored-card__layout {
