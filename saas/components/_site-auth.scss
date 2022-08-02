@@ -5,11 +5,26 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
   }
 }
 
 .auth__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
+.auth__item {
+  @media screen and (max-width: 1199.5px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.02em;
+    color: rgba(117, 117, 117, 1);
+  }
 }
 
 .auth__link:hover,
@@ -22,6 +37,9 @@
   height: 12px;
   margin-right: 10px;
   transition: fill var(--transition-change);
+  @media screen and (max-width: 1199.5px) {
+    margin-right: 8px;
+  }
 }
 
 .auth__link:hover .auth__icon-envelope,
@@ -37,4 +55,7 @@
   margin-right: 10px;
 
   transition: fill var(--transition-change);
+  @media screen and (max-width: 1199.5px) {
+    margin-right: 8px;
+  }
 }

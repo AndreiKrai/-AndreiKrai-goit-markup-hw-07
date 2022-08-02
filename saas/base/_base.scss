@@ -23,13 +23,15 @@ section {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media screen and (min-width: 480px) {
-    width: 450px;
+    width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 738px;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -76,7 +78,10 @@ a {
   overflow: hidden;
 }
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .section-gray-color {
   background-color: var(--middl-bg-color);

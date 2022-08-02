@@ -1,15 +1,26 @@
 .person-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 30px;
+  @media screen and (max-width: 767.5px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .person-card {
-  flex-basis: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 // .person-card:nth-child(-n + 3) {
@@ -17,9 +28,12 @@
 // }
 
 .person-card__desc {
-  padding-top: 30px;
-  padding-bottom: 30px;
   background-color: #fff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .person-card__name {
@@ -41,6 +55,7 @@
   display: flex;
   padding: 0 32px;
   gap: 10px;
+  justify-content: center;
 }
 
 .social-link {
