@@ -80,4 +80,7 @@
 .menu-mobile-icon-close {
   height: 19px;
   width: 19px;
+  .mobile-menu-btn-close:hover & {
+    fill: var(--accent-color);
+  }
 }

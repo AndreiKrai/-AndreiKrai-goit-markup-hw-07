@@ -372,6 +372,9 @@ a {
   height: 19px;
   width: 19px;
 }
+.mobile-menu-btn-close:hover .menu-mobile-icon-close {
+  fill: var(--accent-color);
+}
 
 .hero-section {
   background-color: var(--dark-bg-color);
