@@ -70,13 +70,19 @@ a {
 }
 
 .title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
   color: var(--second-tex-color);
   margin: 0 auto;
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .visualy-hidden {
@@ -614,6 +620,9 @@ a {
   flex-shrink: 0;
 }
 
+.colored-card-list {
+  padding-bottom: 94px;
+}
 @media screen and (min-width: 480px) {
   .colored-card-list {
     display: block;
@@ -1102,12 +1111,14 @@ textarea::placeholder {
   }
 }
 
-.portfolio-btn-item:nth-child(-n+5) {
-  margin-left: 8px;
+@media screen and (max-width: 767px) {
+  .portfolio-btn-item {
+    margin-bottom: 15px;
+  }
 }
 
-.portfolio-btn-item {
-  margin-bottom: 21px;
+.portfolio-btn-item:nth-child(-n+5) {
+  margin-left: 8px;
 }
 
 .product-cards__list {
