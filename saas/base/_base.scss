@@ -86,3 +86,9 @@ a {
 .section-gray-color {
   background-color: var(--middl-bg-color);
 }
+.no-scroll {
+  overflow: hidden;
+}
+.is-closed {
+  transform: translateX(-100%);
+}

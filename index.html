@@ -58,11 +58,51 @@
             >
           </li>
         </ul>
+
         <button class="menu-btn" type="button">
           <svg class="menu-icon" width="24" height="24">
             <use href="./img/sprite.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+      <!-- Mobile menu -->
+
+      <div class="menu-mobile container is-closed">
+        <button class="mobile-menu-btn-close">
+          <svg class="menu-mobile-icon-close">
+            <use href="./img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="nav-mobile">
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link current" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="./practice.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="bottom-nav">
+          <ul class="mobile-menu__auth">
+            <li class="mobile-menu__auth-item mobile-menu__phone">
+              <a class="" href="tel:+380961111111"> +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__auth-item mobile-menu__mail">
+              <a class="" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="socials-mobile">
+            <li><a href="" class="socials-mobile__link">Instagram</a></li>
+            <li><a href="" class="socials-mobile__link"></a>Twitter</li>
+            <li><a href="" class="socials-mobile__link"></a>Facebook</li>
+            <li><a href="" class="socials-mobile__link"></a>Linkedin</li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -568,7 +608,7 @@
 
           <button class="button button-close" data-modal-close>
             <svg class="icon-close">
-              <use href="./img/symbol.svg#icon-close"></use>
+              <use href="./img/sprite.svg#icon-close"></use>
             </svg>
           </button>
         </div>
@@ -576,5 +616,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
