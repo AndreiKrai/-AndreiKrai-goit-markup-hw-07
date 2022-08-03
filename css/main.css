@@ -286,6 +286,7 @@ a {
 }
 
 .menu-mobile {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -1105,7 +1106,7 @@ textarea::placeholder {
   margin-left: 8px;
 }
 
-.portfolio-btn-item:nth-child(3) {
+.portfolio-btn-item {
   margin-bottom: 21px;
 }
 
